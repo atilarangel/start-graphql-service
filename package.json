@@ -1,0 +1,24 @@
+{
+  "name": "start-graphql-service",
+  "version": "1.0.0",
+  "description": "A simple service to me start all my projects without rewrite everything again.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app",
+    "test": "jest"
+  },
+  "author": "@atilarangel",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.2",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "graphql-import": "^0.7.1",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "pg-promise": "^8.4.6"
+  }
+}

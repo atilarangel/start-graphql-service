@@ -1,5 +1,6 @@
 const express = require('express')
 const graphqlHTTP = require('express-graphql')
+const cors = require('cors')
 const { buildSchema } = require('graphql')
 const { importSchema } = require('graphql-import')
 const app = express()
@@ -11,7 +12,7 @@ const resolvers = {
   say: 'Here we go again'
 }
 
-app.use('/', graphqlHTTP({
+app.use('/', cors(),graphqlHTTP({
     schema: schema,
     rootValue: resolvers,
     graphiql: true
